@@ -50,13 +50,19 @@
             color: #ffffff;
         }
 
-        .invite-bot {
+        .invite-bot-container {
+            display: flex;
+            align-items: center;
             margin-top: 20px;
-            text-align: center;
             background: rgba(0, 0, 0, 0.6);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .invite-bot {
+            text-align: center;
+            flex: 1;
         }
 
         .invite-bot h2 {
@@ -88,19 +94,36 @@
             background-color: #c084fc;
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
         }
+
+        .bot-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .bot-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>歡迎來到我的網站</h1>
         <p>裡面放專案</p>
-        <p>探索更多內容，請 <a href="#">點擊此處</a>。</p>
+        <p>探索更多內容，請 <a href="#">加入discord伺服器</a>。</p>
     </div>
 
-    <div class="invite-bot">
-        <h2>邀請我的 Discord Bot</h2>
-        <p>點擊以下按鈕即可邀請我的 Discord Bot 進入你的伺服器，享受便捷與樂趣！</p>
-        <a href="你的邀請連結" target="_blank" class="invite-button">邀請 Discord Bot</a>
+    <div class="invite-bot-container">
+        <div class="invite-bot">
+            <h2>邀請音樂機器人</h2>
+            <p>點擊以下按鈕即可邀請音樂機器人</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1010227479157411900&permissions=0&integration_type=0&scope=bot" target="_blank" class="invite-button">邀請 Discord Bot</a>
+        </div>
+        <div class="bot-image">
+            <img src="./img/icons8-discord-480.png" alt="Discord">
+        </div>
     </div>
 </body>
 </html>
